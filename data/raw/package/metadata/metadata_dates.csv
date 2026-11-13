@@ -1,0 +1,28 @@
+location_id,city,date_start,date_end,nominal_resolution,notes
+LOC-JKT-01,Jakarta Pusat,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-JKT-02,Jakarta Utara,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-JKT-03,Jakarta Barat,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-KTG-01,Palangka Raya,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-KTG-02,Sampit,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-BGR-01,Kabupaten Bogor,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-BGR-02,Kota Bogor,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-YKY-01,Sleman,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-IDP-01,Aceh Besar,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-KTB-01,Agam,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-PKU-01,Pekanbaru,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-JMB-01,Kota Jambi,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-BTM-01,Batam,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-BGL-01,Bengkulu,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-SRG-01,Sorong,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-MLG-01,Malang,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-MRS-01,Maros,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-PLU-01,Poso,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-STG-01,Kalimantan Barat,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-PKN-01,Kotawaringin Barat,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-PLB-01,Palembang,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-PSW-01,Pesawaran,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-MER-01,Merauke,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; remote station operation
+LOC-MDN-01,Medan,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-SM2-01,Samarinda,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-BJB-01,Banjarbaru,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active
+LOC-JMB-02,Muaro Jambi,2024-01-01 00:00:00,2026-10-14 23:00:00,1 hour (nominal),Continuous telemetry recording; automated QC pipeline active

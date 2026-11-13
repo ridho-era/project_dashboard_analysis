@@ -1,0 +1,41 @@
+﻿RS dipakai: 24 dari 27
+RS tidak dipakai (persen hari valid < batas atau dikecualikan): {'RS-XXX-23': 0.2, 'RS-XXX-24': 36.4, 'RS-XXX-27': 0.0}
+
+Model: Poisson, efek tetap RS + hari-minggu + bulan + tahun + suhu + kelembapan;
+SE robust per RS. Angka = perubahan persen kasus per +10 ug/m3 PM2.5 (* = interval 95% tidak memuat 0).
+
+PERUBAHAN PERSEN KASUS PER +10 ug/m3 PM2.5
+hasil          ISPA_balita ISPA_lansia   asma   PPOK resp_umum kardiovask kematian
+jeda 0 hari          +2.3*       +2.3*  +2.3*  +2.4*     +2.1*      +2.9*    +2.9*
+jeda 1 hari          +2.4*       +2.4*  +2.4*  +2.5*     +2.2*      +3.1*    +3.1*
+jeda 2 hari          +2.3*       +2.4*  +2.4*  +2.5*     +2.2*      +3.1*    +3.1*
+jeda 3 hari          +2.3*       +2.4*  +2.4*  +2.5*     +2.2*      +3.1*    +3.1*
+jeda 4 hari          +2.3*       +2.4*  +2.4*  +2.5*     +2.2*      +3.1*    +3.2*
+jeda 5 hari          +2.4*       +2.4*  +2.4*  +2.5*     +2.2*      +3.2*    +3.2*
+jeda 6 hari          +2.4*       +2.4*  +2.4*  +2.5*     +2.2*      +3.2*    +3.2*
+jeda 7 hari          +2.4*       +2.5*  +2.5*  +2.5*     +2.3*      +3.2*    +3.2*
+rata2 jeda 0-2       +2.3*       +2.4*  +2.4*  +2.5*     +2.2*      +3.1*    +3.1*
+rata2 jeda 0-6       +2.4*       +2.5*  +2.5*  +2.6*     +2.2*      +3.3*    +3.3*
+
+INTERVAL 95% (bawah ; atas) untuk JEDA TUNGGAL (0-7 hari) dengan estimasi tertinggi per hasil:
+(rata-rata bergulir tidak ikut diperingkat: perubahan 10 ug/m3 pada rata-rata beberapa hari adalah perubahan yang lebih berkelanjutan)
+  ISPA_balita  jeda 7 hari      +2.45%  [+1.65 ; +3.25]  n=23331
+  ISPA_lansia  jeda 7 hari      +2.50%  [+1.71 ; +3.29]  n=23331
+  PPOK         jeda 7 hari      +2.55%  [+1.65 ; +3.45]  n=23331
+  asma         jeda 7 hari      +2.49%  [+1.71 ; +3.27]  n=23331
+  kardiovask   jeda 7 hari      +3.23%  [+3.11 ; +3.36]  n=23331
+  kematian     jeda 7 hari      +3.23%  [+3.05 ; +3.41]  n=23331
+  resp_umum    jeda 7 hari      +2.29%  [+1.66 ; +2.92]  n=23331
+
+Jumlah observasi per paparan (hasil pertama):
+paparan
+jeda 0 hari       23489
+jeda 1 hari       23466
+jeda 2 hari       23443
+jeda 3 hari       23421
+jeda 4 hari       23399
+jeda 5 hari       23377
+jeda 6 hari       23354
+jeda 7 hari       23331
+rata2 jeda 0-2    22982
+rata2 jeda 0-6    22641

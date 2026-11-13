@@ -1,0 +1,201 @@
+﻿1. PENGELOMPOKAN site_type (periksa; ubah KELOMPOK_URUT bila tidak setuju)
+stasiun                           site_type     kelompok
+ BJB-01           Airport & Peatland Buffer       Gambut
+ JMB-01             Peatland Buffer / Urban       Gambut
+ JMB-02    Peatland & Plantation Hinterland       Gambut
+ KTG-02                   Peatland Boundary       Gambut
+ PKN-01         Peatland Boundary / Airport       Gambut
+ PKU-01             Peatland Buffer / Urban       Gambut
+ PLB-01      Peatland Buffer / Urban Artery       Gambut
+ STG-01          Peatland Boundary / Inland       Gambut
+ BTM-01     Industrial Perimeter / Maritime     Industri
+ JKT-02                Industrial Perimeter     Industri
+ MRS-01        Industrial / Karst Perimeter     Industri
+ SM2-01   Industrial & Deforestation Buffer     Industri
+ BGR-02                  Traffic / Roadside  Lalu lintas
+ JKT-03                  Traffic / Roadside  Lalu lintas
+ PSW-01 Urban Background / Highway Corridor  Lalu lintas
+ BGR-01         Regional / Clean Background Latar bersih
+ IDP-01         Regional / Clean Background Latar bersih
+ KTB-01         Regional / Clean Background Latar bersih
+ PLU-01         Regional / Clean Background Latar bersih
+ JKT-01                    Urban Background    Perkotaan
+ KTG-01                    Urban Background    Perkotaan
+ MDN-01                    Urban Background    Perkotaan
+ MLG-01           Urban Background / Valley    Perkotaan
+ YKY-01                    Urban Background    Perkotaan
+ BGL-01            Urban Coastal Background      Pesisir
+ MER-01            Coastal / Remote Savanna      Pesisir
+ SRG-01       Coastal / Regional Background      Pesisir
+
+Jumlah stasiun per kelompok: {'Gambut': 8, 'Perkotaan': 5, 'Latar bersih': 4, 'Industri': 4, 'Pesisir': 3, 'Lalu lintas': 3}
+
+================================================================================
+2. POLA JAM-DALAM-HARI (jam sesuai kolom waktu data = WIB; baris VALID saja)
+         jam_puncak  jam_terendah  rasio_puncak_per_lembah      kelompok
+stasiun                                                                 
+BGL-01            7            13                     1.82       Pesisir
+BGR-01           18             1                     1.26  Latar bersih
+BGR-02            7             1                     1.17   Lalu lintas
+BJB-01            8             0                     1.62        Gambut
+BTM-01            8            13                     1.65      Industri
+IDP-01            5             9                     4.60  Latar bersih
+JKT-01           19            14                     1.45     Perkotaan
+JKT-02           17            14                     1.35      Industri
+JKT-03            9            14                     1.40   Lalu lintas
+JMB-01            7            13                     1.58        Gambut
+JMB-02            4             6                     1.10        Gambut
+KTB-01            7            14                     1.51  Latar bersih
+KTG-01           13            11                     1.05     Perkotaan
+KTG-02           21            17                     1.11        Gambut
+MDN-01            9             0                     2.39     Perkotaan
+MER-01           13             1                     1.48       Pesisir
+MLG-01            7            14                     1.84     Perkotaan
+MRS-01            6            13                     1.83      Industri
+PKN-01            7            13                     1.41        Gambut
+PKU-01            6            12                     1.60        Gambut
+PLB-01           18            13                     1.47        Gambut
+PLU-01            7            13                     1.85  Latar bersih
+PSW-01            6            13                     1.60   Lalu lintas
+SM2-01            8            23                     1.27      Industri
+SRG-01            6            13                     1.83       Pesisir
+STG-01            7            13                     1.46        Gambut
+YKY-01            7             2                     2.37     Perkotaan
+
+Bentuk pola jam per kelompok (1,00 = rata-rata harian stasiun itu; rata-rata antarstasiun):
+                 0     1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20    21    22    23
+kelompok                                                                                                                                                    
+Gambut        0.94  0.95  0.95  0.95  0.96  0.97  1.05  1.23  1.19  1.05  0.99  0.98  0.97  0.94  0.94  0.95  0.98  0.99  1.13  1.09  0.96  0.95  0.95  0.94
+Industri      0.95  0.94  0.93  0.94  0.94  0.95  1.10  1.29  1.23  1.08  0.96  0.94  0.93  0.90  0.90  0.95  0.96  1.08  1.16  1.09  0.97  0.94  0.94  0.93
+Lalu lintas   0.95  0.95  0.95  0.96  0.96  0.96  1.08  1.21  1.16  1.08  0.96  0.92  0.88  0.88  0.88  0.96  0.96  1.16  1.15  1.15  0.96  0.96  0.96  0.96
+Latar bersih  1.01  1.09  1.02  1.02  0.96  1.17  1.10  1.16  1.27  0.86  0.86  0.90  0.86  0.86  0.86  0.91  0.90  1.14  1.14  1.02  0.96  0.96  0.96  0.96
+Perkotaan     0.87  0.85  0.86  0.90  0.92  0.96  1.05  1.36  1.23  1.16  1.01  0.97  0.97  0.95  0.94  0.97  0.99  1.08  1.17  1.15  0.98  0.90  0.89  0.88
+Pesisir       0.89  0.89  0.89  0.89  0.91  0.92  1.33  1.35  1.16  0.98  1.00  1.00  0.95  0.95  0.95  1.00  1.00  1.18  1.17  0.95  0.93  0.92  0.92  0.90
+
+================================================================================
+3. AKHIR PEKAN vs HARI KERJA (rasio rata-rata PM2.5 harian; > 1 = akhir pekan lebih tinggi)
+         False   True  rasio_akhir_pekan      kelompok
+stasiun                                               
+BGL-01   25.56  25.59               1.00       Pesisir
+BGR-01   13.22  13.26               1.00  Latar bersih
+BGR-02   19.23  19.25               1.00   Lalu lintas
+BJB-01   49.22  49.22               1.00        Gambut
+BTM-01   47.57  47.57               1.00      Industri
+IDP-01    9.32   9.38               1.01  Latar bersih
+JKT-01   48.12  48.01               1.00     Perkotaan
+JKT-02   60.10  59.98               1.00      Industri
+JKT-03   54.09  53.98               1.00   Lalu lintas
+JMB-01   44.46  44.46               1.00        Gambut
+KTB-01   18.67  18.61               1.00  Latar bersih
+KTG-01   61.55  59.57               0.97     Perkotaan
+KTG-02   61.60  59.70               0.97        Gambut
+MDN-01   45.56  45.94               1.01     Perkotaan
+MER-01   14.98  15.83               1.06       Pesisir
+MLG-01   30.68  30.70               1.00     Perkotaan
+MRS-01   36.83  36.82               1.00      Industri
+PKN-01   45.32  45.17               1.00        Gambut
+PKU-01   47.06  47.15               1.00        Gambut
+PLB-01   62.06  65.58               1.06        Gambut
+PLU-01   11.26  11.27               1.00  Latar bersih
+PSW-01   50.69  50.79               1.00   Lalu lintas
+SM2-01   60.46  58.07               0.96      Industri
+SRG-01   18.39  18.34               1.00       Pesisir
+STG-01   38.25  38.23               1.00        Gambut
+YKY-01   39.29  40.88               1.04     Perkotaan
+
+Median rasio per kelompok:
+kelompok
+Gambut          1.000
+Industri        0.999
+Lalu lintas     1.001
+Latar bersih    1.002
+Perkotaan       1.001
+Pesisir         1.001
+
+================================================================================
+4. KORELASI SPEARMAN HARIAN PM2.5 vs CUACA, per stasiun (mentah dan tanpa pola musiman bulanan)
+         n_hari  temp_mean_mentah  temp_mean_tanpa_musim  rh_mean_mentah  rh_mean_tanpa_musim  ws_mean_mentah  ws_mean_tanpa_musim
+stasiun                                                                                                                           
+BGL-01     1018              0.01                  -0.03           -0.02                -0.02           -0.01                -0.02
+BGR-01     1018             -0.03                  -0.02           -0.04                -0.04           -0.01                -0.00
+BGR-02     1018              0.07                   0.07           -0.02                -0.02           -0.05                -0.06
+BJB-01      712              0.01                  -0.02           -0.04                -0.02           -0.01                -0.02
+BTM-01     1018             -0.04                  -0.01           -0.01                -0.01            0.03                -0.02
+IDP-01     1018             -0.01                  -0.06            0.04                -0.00            0.03                 0.04
+JKT-01     1018             -0.04                  -0.08            0.05                 0.07           -0.05                -0.04
+JKT-02     1018             -0.02                  -0.03            0.03                 0.03           -0.01                -0.02
+JKT-03     1018             -0.06                  -0.05           -0.01                 0.04           -0.00                -0.04
+JMB-01     1018             -0.02                   0.00            0.03                -0.02           -0.04                -0.02
+KTB-01     1018             -0.01                  -0.01           -0.03                -0.03           -0.00                 0.04
+KTG-01     1018              0.01                   0.00           -0.02                 0.01            0.02                 0.01
+KTG-02     1018              0.04                  -0.02            0.02                 0.01            0.00                -0.01
+MLG-01     1018              0.01                  -0.01           -0.00                 0.02           -0.05                 0.04
+MRS-01     1018             -0.02                  -0.02           -0.00                 0.07           -0.01                 0.00
+PKN-01     1018             -0.01                  -0.06            0.02                 0.03           -0.02                 0.04
+PKU-01     1018              0.04                  -0.01            0.01                -0.01            0.02                 0.02
+PLB-01      628             -0.03                  -0.15            0.02                 0.13            0.02                -0.09
+PLU-01     1018              0.08                   0.02           -0.03                -0.07           -0.02                 0.00
+PSW-01     1018              0.01                  -0.03            0.02                 0.08            0.03                 0.01
+SM2-01      771              0.26                  -0.03           -0.28                 0.00            0.01                 0.03
+SRG-01     1018             -0.01                  -0.05            0.04                 0.09           -0.01                 0.05
+STG-01     1018             -0.00                  -0.07            0.01                 0.02            0.00                -0.01
+YKY-01     1018              0.02                   0.01           -0.05                -0.05            0.03                 0.04
+
+Median per kelompok:
+              temp_mean_mentah  temp_mean_tanpa_musim  rh_mean_mentah  rh_mean_tanpa_musim  ws_mean_mentah  ws_mean_tanpa_musim
+kelompok                                                                                                                       
+Gambut                   -0.00                  -0.02            0.02                 0.01            0.00                -0.01
+Industri                 -0.02                  -0.02           -0.01                 0.02            0.00                -0.01
+Lalu lintas               0.01                  -0.03           -0.01                 0.04           -0.00                -0.04
+Latar bersih             -0.01                  -0.02           -0.03                -0.03           -0.01                 0.02
+Perkotaan                 0.01                  -0.00           -0.01                 0.02           -0.02                 0.02
+Pesisir                   0.00                  -0.04            0.01                 0.04           -0.01                 0.02
+
+================================================================================
+5. ANTARSTASIUN (hanya stasiun dengan >= 500 hari valid; n kecil, tafsirkan hati-hati)
+n stasiun: 24
+Spearman PM2.5 rata-rata vs distance_to_road_m: -0.60
+Spearman PM2.5 rata-rata vs traffic_intensity_per_h: 0.47
+Spearman PM2.5 rata-rata vs baseline_pm25: 0.72
+
+Ringkasan per kelompok:
+              stasiun  pm25_rata2  persen_hari_di_atas_55  jarak_jalan_m  lalu_lintas_per_jam
+kelompok                                                                                     
+Gambut              7        49.8                    25.5           35.0               1400.0
+Industri            4        51.1                    34.8           27.5               1775.0
+Lalu lintas         3        41.3                    20.1           10.0               2400.0
+Latar bersih        4        13.1                     0.1          175.0                175.0
+Perkotaan           4        44.9                     6.5           45.0               1500.0
+Pesisir             2        22.0                     0.0           70.0                775.0
+
+================================================================================
+6. PM2.5 RATA-RATA PER SEKTOR ARAH ASAL ANGIN (8 sektor, per stasiun)
+            U    TL     T    TG     S    BD     B    BL sektor_tertinggi sektor_terendah  rasio_tertinggi_per_terendah
+stasiun                                                                                                               
+BGL-01   14.0  25.0  26.0  26.0  26.0  25.0  26.0  25.0                B               U                          1.79
+BGR-01    NaN   NaN   NaN   NaN  13.0  13.0   NaN   NaN               BD               S                          1.00
+BGR-02    NaN   NaN   NaN   NaN  19.0  19.0   NaN   NaN               BD               S                          1.00
+BJB-01   49.0  51.0  50.0  49.0  49.0  49.0  49.0  48.0               TL              BL                          1.05
+BTM-01   36.0  48.0  47.0  47.0  48.0  48.0  47.0  50.0               BL               U                          1.39
+IDP-01   10.0  10.0  10.0  10.0   8.0   8.0   8.0   8.0                U               B                          1.35
+JKT-01    NaN  48.0  48.0   NaN  48.0   NaN  48.0  48.0                B               S                          1.01
+JKT-02    NaN  60.0  60.0   NaN  60.0   NaN  60.0  60.0               TL              BL                          1.01
+JKT-03    NaN  54.0  54.0   NaN  54.0   NaN  54.0  54.0               TL               T                          1.00
+JMB-01   37.0  48.0  45.0  44.0  44.0  45.0  44.0  44.0               TL               U                          1.31
+JMB-02    NaN  69.0  68.0  67.0  68.0  69.0  69.0  69.0               BD              TG                          1.02
+KTB-01   12.0  24.0  19.0  19.0  19.0  19.0  19.0  16.0               TL               U                          2.02
+KTG-01    NaN   NaN   NaN  61.0  61.0   NaN   NaN   NaN                S              TG                          1.01
+KTG-02    NaN   NaN   NaN  60.0  61.0   NaN   NaN   NaN                S              TG                          1.01
+MDN-01   44.0  45.0  46.0  46.0  45.0  45.0  46.0  46.0                T               U                          1.03
+MER-01   12.0  14.0  14.0  17.0  18.0  18.0   NaN   NaN               BD               U                          1.57
+MLG-01   30.0  28.0  31.0  31.0  31.0  31.0  30.0  33.0               BL              TL                          1.15
+MRS-01   30.0  35.0  37.0  37.0  37.0  37.0  37.0  40.0               BL               U                          1.30
+PKN-01    NaN  57.0  45.0  45.0  45.0  45.0  46.0  45.0               TL              BL                          1.26
+PKU-01   24.0  43.0  47.0  47.0  47.0  47.0  47.0  58.0               BL               U                          2.48
+PLB-01    NaN  50.0  52.0  67.0  69.0  53.0  49.0  34.0                S              BL                          2.05
+PLU-01   11.0  11.0  11.0  11.0  11.0  11.0  11.0  11.0               BL               U                          1.03
+PSW-01    NaN  54.0  51.0  51.0  51.0  50.0  50.0  47.0               TL              BL                          1.15
+SM2-01   87.0  79.0  80.0  78.0  78.0  78.0  78.0  82.0                U               S                          1.12
+SRG-01   23.0  19.0  19.0  18.0  18.0  18.0  18.0  19.0                U               B                          1.26
+STG-01   44.0  45.0  39.0  38.0  39.0  38.0  37.0  33.0               TL              BL                          1.38
+YKY-01   41.0  40.0  41.0  39.0  39.0  39.0  38.0  41.0               BL               B                          1.06

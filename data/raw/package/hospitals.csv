@@ -1,0 +1,28 @@
+hospital_id,nama_rumah_sakit,kota_kabupaten,kecamatan,provinsi,kelas_faskes,kapasitas_tempat_tidur
+RS-XXX-01,RSUD XXX Gambir,Jakarta Pusat,Gambir,DKI Jakarta,Tipe B,300.0
+RS-XXX-02,RSUD XXX Cilincing,Jakarta Utara,Cilincing,DKI Jakarta,Tipe B,250.0
+RS-XXX-03,RSUD XXX Cengkareng,Jakarta Barat,Cengkareng,DKI Jakarta,Tipe B,280.0
+RS-XXX-04,RSUD XXX Jekan Raya,Kota Palangka Raya,Jekan Raya,Kalimantan Tengah,Tipe B,220.0
+RS-XXX-05,RSUD XXX Mentawa Baru,Kabupaten Kotawaringin Timur,Mentawa Baru Ketapang,Kalimantan Tengah,Tipe C,150.0
+RS-XXX-06,RS Paru XXX Cisarua,Kabupaten Bogor,Cisarua,Jawa Barat,Tipe A (Khusus Paru),200.0
+RS-XXX-07,RSUD XXX Bogor Tengah,Kota Bogor,Bogor Tengah,Jawa Barat,Tipe B,260.0
+RS-XXX-08,RSUD XXX Sleman,Kabupaten Sleman,Mlati,D.I. Yogyakarta,Tipe B,250.0
+RS-XXX-09,RSUD XXX Indrapuri,Kabupaten Aceh Besar,Indrapuri,Aceh,Tipe C,120.0
+RS-XXX-10,RSUD XXX Agam,Kabupaten Agam,Palembayan,Sumatera Barat,Tipe B,180.0
+RS-XXX-11,RSUD XXX Pekanbaru,Kota Pekanbaru,Marpoyan Damai,Riau,Tipe B,180.0
+RS-XXX-12,RSUD XXX Kota Jambi,Kota Jambi,Jambi Selatan,Jambi,Tipe B,180.0
+RS-XXX-13,RSUD XXX Batam,Kota Batam,Batu Besar,Kepulauan Riau,Tipe B,180.0
+RS-XXX-14,RSUD XXX Bengkulu,Kota Bengkulu,Selebar,Bengkulu,Tipe B,180.0
+RS-XXX-15,RSUD XXX Sorong,Kota Sorong,Sorong Timur,Papua Barat Daya,Tipe B,180.0
+RS-XXX-16,RSUD XXX Malang,Kabupaten Malang,Karangploso,Jawa Timur,Tipe B,180.0
+RS-XXX-17,RSUD XXX Maros,Kabupaten Maros,Mandai,Sulawesi Selatan,Tipe B,180.0
+RS-XXX-18,RSUD XXX Poso,Kabupaten Poso,Lore Utara,Sulawesi Tengah,Tipe B,180.0
+RS-XXX-19,RSUD XXX Sintang,Kabupaten Sintang,Sungai Tebelian,Kalimantan Barat,Tipe B,180.0
+RS-XXX-20,RSUD XXX Pangkalan Bun,Kabupaten Kotawaringin Barat,Arut Selatan,Kalimantan Tengah,Tipe B,180.0
+RS-XXX-21,RSUD XXX Palembang,Kota Palembang,Sukarami,Sumatera Selatan,Tipe B,220.0
+RS-XXX-22,RSUD XXX Pesawaran,Kabupaten Pesawaran,Tegineneng,Lampung,Tipe C,160.0
+RS-XXX-23,RSUD XXX Merauke,Kabupaten Merauke,Merauke,Papua Selatan,Tipe C,150.0
+RS-XXX-24,RSUP XXX Medan,Kota Medan,Medan Tuntungan,Sumatera Utara,Tipe A,720.0
+RS-XXX-25,RSUD XXX Samarinda,Kota Samarinda,Sungai Pinang,Kalimantan Timur,Tipe A,600.0
+RS-XXX-26,RSUD XXX Banjarbaru,Kota Banjarbaru,Landasan Ulin,Kalimantan Selatan,Tipe B,300.0
+RS-XXX-27,RSUD XXX Muaro Jambi,Kabupaten Muaro Jambi,Mestong,Jambi,Tipe C,120.0

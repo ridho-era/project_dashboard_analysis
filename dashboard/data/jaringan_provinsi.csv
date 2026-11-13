@@ -1,0 +1,22 @@
+provinsi,pulau,stasiun,efektif,hari_valid,hari_sangat_tidak_sehat_plus,hari_di_atas_55,persen_hari_di_atas_55,resp_rata2_per_hari_RS,tingkat
+Aceh,Sumatera,1,1,1018,0,0,0.0,8.3,C: tidak ada tanda kekurangan
+Bengkulu,Sumatera,1,1,1018,0,0,0.0,19.0,C: tidak ada tanda kekurangan
+D.I. Yogyakarta,Jawa,1,1,1018,0,10,1.0,30.0,C: tidak ada tanda kekurangan
+DKI Jakarta,Jawa,3,3,3054,0,1370,44.9,54.5,C: tidak ada tanda kekurangan
+Jambi,Sumatera,2,1,1018,2,258,25.3,15.8,"A: terpapar, hanya <=1 stasiun efektif"
+Jawa Barat,Jawa,2,2,2036,0,0,0.0,21.6,C: tidak ada tanda kekurangan
+Jawa Timur,Jawa,1,1,1018,0,0,0.0,20.5,C: tidak ada tanda kekurangan
+Kalimantan Barat,Kalimantan,1,1,1018,5,229,22.5,25.8,"A: terpapar, hanya <=1 stasiun efektif"
+Kalimantan Selatan,Kalimantan,1,0,712,0,204,28.7,10.5,TERBATAS: tidak ada stasiun efektif + terpapar
+Kalimantan Tengah,Kalimantan,3,3,3054,94,775,25.4,37.9,C: tidak ada tanda kekurangan
+Kalimantan Timur,Kalimantan,1,1,771,76,106,13.7,13.9,"A: terpapar, hanya <=1 stasiun efektif"
+Kepulauan Riau,Sumatera,1,1,1018,1,259,25.4,28.4,"A: terpapar, hanya <=1 stasiun efektif"
+Lampung,Sumatera,1,1,1018,0,261,25.6,35.0,"A: terpapar, hanya <=1 stasiun efektif"
+Papua Barat Daya,Papua,1,1,1018,0,0,0.0,17.5,C: tidak ada tanda kekurangan
+Papua Selatan,Papua,1,0,2,0,0,0.0,14.1,BUTA: cakupan data < 10%
+Riau,Sumatera,1,1,1018,2,259,25.4,28.0,"A: terpapar, hanya <=1 stasiun efektif"
+Sulawesi Selatan,Sulawesi,1,1,1018,0,0,0.0,23.3,C: tidak ada tanda kekurangan
+Sulawesi Tengah,Sulawesi,1,1,1018,0,0,0.0,17.5,C: tidak ada tanda kekurangan
+Sumatera Barat,Sumatera,1,1,1018,2,6,0.6,19.3,"A: terpapar, hanya <=1 stasiun efektif"
+Sumatera Selatan,Sumatera,1,0,628,57,159,25.3,42.5,TERBATAS: tidak ada stasiun efektif + terpapar
+Sumatera Utara,Sumatera,1,0,371,0,33,8.9,14.6,TERBATAS: tidak ada stasiun efektif

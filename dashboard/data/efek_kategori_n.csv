@@ -1,0 +1,7 @@
+paparan,kategori,hari_RS
+PM2.5 hari itu,"<=55,4",19618
+PM2.5 hari itu,"55,5-150,4",3632
+PM2.5 hari itu,">150,4",239
+rata-rata 7 hari,"<=55,4",19080
+rata-rata 7 hari,"55,5-150,4",3466
+rata-rata 7 hari,">150,4",95

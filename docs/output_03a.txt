@@ -1,0 +1,133 @@
+﻿Jumlah jam seharusnya pada grid: 24432
+
+A. STRUKTUR DAN PARSING
+  file       status  baris  ts_gagal  te_gagal  di_luar_rentang  urut  dup_ts_persis  baris_lebih_per_jam
+BGL-01       Active  24432         0         0                0  True              0                    0
+BGR-01       Active  24432         0         0                0  True              0                    0
+BGR-02       Active  24432         0         0                0  True              0                    0
+BJB-01       Active  24432         0         0                0  True              0                    0
+BTM-01       Active  24432         0         0                0  True              0                    0
+IDP-01       Active  24432         0         0                0  True              0                    0
+JKT-01       Active  24432         0         0                0  True              0                    0
+JKT-02       Active  24432         0         0                0  True              0                    0
+JKT-03       Active  24432         0         0                0  True              0                    0
+JMB-01       Active  24432         0         0                0  True              0                    0
+JMB-02    Defective  24432         0         0              132 False            223                   92
+KTB-01       Active  24432         0         0                0  True              0                    0
+KTG-01       Active  24432         0         0                0  True              0                    0
+KTG-02       Active  24432         0         0                0  True              0                    0
+MDN-01 Intermittent  20800         0         0                0  True              0                    0
+MER-01 Intermittent  24432         0         0                0  True              0                    0
+MLG-01       Active  24432         0         0                0  True              0                    0
+MRS-01       Active  24432         0         0                0  True              0                    0
+PKN-01       Active  24432         0         0                0  True              0                    0
+PKU-01       Active  24432         0         0                0  True              0                    0
+PLB-01 Intermittent  36381         0         0                0  True              0                11949
+PLU-01       Active  24432         0         0                0  True              0                    0
+PSW-01       Active  24432         0         0                0  True              0                    0
+SM2-01       Active  24432         0         0                0  True              0                    0
+SRG-01       Active  24432         0         0                0  True              0                    0
+STG-01       Active  24432         0         0                0  True              0                    0
+YKY-01       Active  24432         0         0                0  True              0                    0
+
+B. KELENGKAPAN GRID JAM DAN JITTER
+  file       status  jam_unik_ada  jam_hilang  n_celah  celah_maks_jam  offset_min_s  offset_med_s  offset_maks_s  n_offset_unik
+BGL-01       Active         24432           0        0               0        130.00        130.00         130.00              1
+BGR-01       Active         24432           0        0               0          0.00          0.00           0.00              1
+BGR-02       Active         24432           0        0               0          0.00          0.00           0.00              1
+BJB-01       Active         24432           0        0               0         75.42         75.42          75.42              1
+BTM-01       Active         24432           0        0               0       -704.90       -704.90        -704.90              1
+IDP-01       Active         24432           0        0               0          0.00          0.00           0.00              1
+JKT-01       Active         24432           0        0               0          0.00          0.00           0.00              1
+JKT-02       Active         24432           0        0               0          0.00          0.00           0.00              1
+JKT-03       Active         24432           0        0               0          0.00          0.00           0.00              1
+JMB-01       Active         24432           0        0               0       -269.50       -269.50        -269.50              1
+JMB-02    Defective         24208         224      223               2        312.10        312.10         312.10              1
+KTB-01       Active         24432           0        0               0         74.25         74.25          74.25              1
+KTG-01       Active         24432           0        0               0          0.00          0.00           0.00              1
+KTG-02       Active         24432           0        0               0          0.00          0.00           0.00              1
+MDN-01 Intermittent         20800        3632     2713             121        258.25        258.25         258.25              1
+MER-01 Intermittent         24432           0        0               0        312.10        312.10         312.10              1
+MLG-01       Active         24432           0        0               0       -109.80       -109.80        -109.80              1
+MRS-01       Active         24432           0        0               0        258.60        258.60         258.60              1
+PKN-01       Active         24432           0        0               0        -74.20        -74.20         -74.20              1
+PKU-01       Active         24432           0        0               0          0.12          0.12           0.12              1
+PLB-01 Intermittent         24432           0        0               0      -1800.00          0.00        1800.00              5
+PLU-01       Active         24432           0        0               0         40.15         40.15          40.15              1
+PSW-01       Active         24432           0        0               0        225.35        225.35         225.35              1
+SM2-01       Active         24432           0        0               0        160.18        160.18         160.18              1
+SRG-01       Active         24432           0        0               0        682.75        682.75         682.75              1
+STG-01       Active         24432           0        0               0       -165.60       -165.60        -165.60              1
+YKY-01       Active         24432           0        0               0          0.00          0.00           0.00              1
+
+C. SELISIH ANTAR JAM DAN DURASI JENDELA
+  file                selisih_jam_terbanyak        durasi_terbanyak
+BGL-01                            1j x24431               1j x24432
+BGR-01                            1j x24431               1j x24432
+BGR-02                            1j x24431               1j x24432
+BJB-01                            1j x24431               1j x24432
+BTM-01                            1j x24431               1j x24432
+IDP-01                            1j x24431               1j x24432
+JKT-01                            1j x24431               1j x24432
+JKT-02                            1j x24431               1j x24432
+JKT-03                            1j x24431               1j x24432
+JMB-01                            1j x24431               1j x24432
+JMB-02    1j x23984; 2j x222; 0j x92; 3j x1      1j x24340; -1j x92
+KTB-01                            1j x24431               1j x24432
+KTG-01                            1j x24431               1j x24432
+KTG-02                            1j x24431               1j x24432
+MDN-01 1j x18086; 2j x2379; 3j x290; 4j x34               1j x20800
+MER-01                            1j x24431               1j x24432
+MLG-01                            1j x24431               1j x24432
+MRS-01                            1j x24431               1j x24432
+PKN-01                            1j x24431               1j x24432
+PKU-01                            1j x24431               1j x24432
+PLB-01                 1j x24431; 0j x11949 1j x20448; 0.25j x15933
+PLU-01                            1j x24431               1j x24432
+PSW-01                            1j x24431               1j x24432
+SM2-01                            1j x24431               1j x24432
+SRG-01                            1j x24431               1j x24432
+STG-01                            1j x24431               1j x24432
+YKY-01                            1j x24431               1j x24432
+
+[JMB-02] CELAH JAM HILANG (5 terpanjang)
+                  mulai             selesai  n
+178 2026-03-12 18:00:00 2026-03-12 19:00:00  2
+2   2024-01-22 08:00:00 2024-01-22 08:00:00  1
+1   2024-01-12 22:00:00 2024-01-12 22:00:00  1
+4   2024-01-30 18:00:00 2024-01-30 18:00:00  1
+5   2024-02-01 22:00:00 2024-02-01 22:00:00  1
+
+[JMB-02] TIMESTAMP DI LUAR RENTANG (5 contoh dari 132)
+             timestamp_start            timestamp_end
+286  1970-01-01 00:00:00.000  1970-01-01 01:00:00.000
+512  1970-01-01 00:00:00.000  1970-01-01 01:00:00.000
+663  1970-01-01 00:00:00.000  1970-01-01 01:00:00.000
+766  1970-01-01 00:00:00.000  1970-01-01 01:00:00.000
+984  1970-01-01 00:00:00.000  1970-01-01 01:00:00.000
+
+[JMB-02] JAM YANG SAMA MUNCUL >1 KALI (6 contoh; baris terlibat: 184)
+             timestamp_start            timestamp_end
+714  2024-01-30 19:05:12.100  2024-01-30 18:05:12.100
+715  2024-01-30 19:05:12.100  2024-01-30 20:05:12.100
+777  2024-02-02 10:05:12.100  2024-02-02 09:05:12.100
+778  2024-02-02 10:05:12.100  2024-02-02 11:05:12.100
+792  2024-02-03 01:05:12.100  2024-02-03 00:05:12.100
+793  2024-02-03 01:05:12.100  2024-02-03 02:05:12.100
+
+[MDN-01] CELAH JAM HILANG (5 terpanjang)
+                   mulai             selesai    n
+1805 2025-11-05 23:00:00 2025-11-10 23:00:00  121
+1022 2025-01-14 03:00:00 2025-01-18 03:00:00   97
+189  2024-03-11 20:00:00 2024-03-15 19:00:00   96
+2188 2026-04-05 00:00:00 2026-04-08 23:00:00   96
+630  2024-08-17 04:00:00 2024-08-20 03:00:00   72
+
+[PLB-01] JAM YANG SAMA MUNCUL >1 KALI (6 contoh; baris terlibat: 15935)
+              timestamp_start            timestamp_end
+5856  2024-09-01 00:00:00.000  2024-09-01 00:15:00.000
+5857  2024-09-01 00:15:00.000  2024-09-01 00:30:00.000
+5858  2024-09-01 00:30:00.000  2024-09-01 00:45:00.000
+5859  2024-09-01 00:45:00.000  2024-09-01 01:00:00.000
+5860  2024-09-01 01:00:00.000  2024-09-01 01:15:00.000
+5861  2024-09-01 01:15:00.000  2024-09-01 01:30:00.000

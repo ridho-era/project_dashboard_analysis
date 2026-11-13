@@ -1,0 +1,165 @@
+﻿================================================================================
+1. KEUNIKAN KANDIDAT PRIMARY KEY
+sites.location_id              baris= 27 unik= 27 kosong=0 duplikat=0
+sites.station_code             baris= 27 unik= 27 kosong=0 duplikat=0
+sensors.sensor_id              baris= 27 unik= 27 kosong=0 duplikat=0
+sensors.location_id            baris= 27 unik= 27 kosong=0 duplikat=0
+hospitals.hospital_id          baris= 27 unik= 27 kosong=0 duplikat=0
+metadata_dates.location_id     baris= 27 unik= 27 kosong=0 duplikat=0
+
+================================================================================
+2. INTEGRITAS FOREIGN KEY (selisih himpunan)
+sensors.location_id vs sites.location_id
+   hanya di sensors: []
+   hanya di sites: []
+metadata_dates.location_id vs sites.location_id
+   hanya di metadata_dates: []
+   hanya di sites: []
+HLT.hospital_id vs hospitals.hospital_id
+   hanya di HLT: []
+   hanya di hospitals: []
+
+================================================================================
+3. PEMETAAN STASIUN <-> RUMAH SAKIT (berdasarkan nomor urut)
+ no sensor_id location_id              kecamatan_stasiun          kota_kabupaten_stasiun   provinsi_stasiun hospital_id          kecamatan_rs            kota_kabupaten_rs        provinsi_rs  provinsi_sama
+  1  SENS-001  LOC-JKT-01                         Gambir Kota Administrasi Jakarta Pusat        DKI Jakarta   RS-XXX-01                Gambir                Jakarta Pusat        DKI Jakarta           True
+  2  SENS-002  LOC-JKT-02            Cilincing (Marunda) Kota Administrasi Jakarta Utara        DKI Jakarta   RS-XXX-02             Cilincing                Jakarta Utara        DKI Jakarta           True
+  3  SENS-003  LOC-JKT-03                     Cengkareng Kota Administrasi Jakarta Barat        DKI Jakarta   RS-XXX-03            Cengkareng                Jakarta Barat        DKI Jakarta           True
+  4  SENS-004  LOC-KTG-01                     Jekan Raya              Kota Palangka Raya  Kalimantan Tengah   RS-XXX-04            Jekan Raya           Kota Palangka Raya  Kalimantan Tengah           True
+  5  SENS-005  LOC-KTG-02 Mentawa Baru Ketapang (Sampit)    Kabupaten Kotawaringin Timur  Kalimantan Tengah   RS-XXX-05 Mentawa Baru Ketapang Kabupaten Kotawaringin Timur  Kalimantan Tengah           True
+  6  SENS-006  LOC-BGR-01                        Cisarua                 Kabupaten Bogor         Jawa Barat   RS-XXX-06               Cisarua              Kabupaten Bogor         Jawa Barat           True
+  7  SENS-007  LOC-BGR-02   Bogor Tengah (Baranangsiang)                      Kota Bogor         Jawa Barat   RS-XXX-07          Bogor Tengah                   Kota Bogor         Jawa Barat           True
+  8  SENS-008  LOC-YKY-01                          Mlati                Kabupaten Sleman    D.I. Yogyakarta   RS-XXX-08                 Mlati             Kabupaten Sleman    D.I. Yogyakarta           True
+  9  SENS-009  LOC-IDP-01                      Indrapuri            Kabupaten Aceh Besar               Aceh   RS-XXX-09             Indrapuri         Kabupaten Aceh Besar               Aceh           True
+ 10  SENS-010  LOC-KTB-01                     Palembayan                  Kabupaten Agam     Sumatera Barat   RS-XXX-10            Palembayan               Kabupaten Agam     Sumatera Barat           True
+ 11  SENS-011  LOC-PKU-01                 Marpoyan Damai                  Kota Pekanbaru               Riau   RS-XXX-11        Marpoyan Damai               Kota Pekanbaru               Riau           True
+ 12  SENS-012  LOC-JMB-01                  Jambi Selatan                      Kota Jambi              Jambi   RS-XXX-12         Jambi Selatan                   Kota Jambi              Jambi           True
+ 13  SENS-013  LOC-BTM-01                     Batu Besar                      Kota Batam     Kepulauan Riau   RS-XXX-13            Batu Besar                   Kota Batam     Kepulauan Riau           True
+ 14  SENS-014  LOC-BGL-01                        Selebar                   Kota Bengkulu           Bengkulu   RS-XXX-14               Selebar                Kota Bengkulu           Bengkulu           True
+ 15  SENS-015  LOC-SRG-01                   Sorong Timur                     Kota Sorong   Papua Barat Daya   RS-XXX-15          Sorong Timur                  Kota Sorong   Papua Barat Daya           True
+ 16  SENS-016  LOC-MLG-01                    Karangploso                Kabupaten Malang         Jawa Timur   RS-XXX-16           Karangploso             Kabupaten Malang         Jawa Timur           True
+ 17  SENS-017  LOC-MRS-01                         Mandai                 Kabupaten Maros   Sulawesi Selatan   RS-XXX-17                Mandai              Kabupaten Maros   Sulawesi Selatan           True
+ 18  SENS-018  LOC-PLU-01                     Lore Utara                  Kabupaten Poso    Sulawesi Tengah   RS-XXX-18            Lore Utara               Kabupaten Poso    Sulawesi Tengah           True
+ 19  SENS-019  LOC-STG-01                Sungai Tebelian               Kabupaten Sintang   Kalimantan Barat   RS-XXX-19       Sungai Tebelian            Kabupaten Sintang   Kalimantan Barat           True
+ 20  SENS-020  LOC-PKN-01                   Arut Selatan    Kabupaten Kotawaringin Barat  Kalimantan Tengah   RS-XXX-20          Arut Selatan Kabupaten Kotawaringin Barat  Kalimantan Tengah           True
+ 21  SENS-021  LOC-PLB-01       Sukarami (Talang Betutu)                  Kota Palembang   Sumatera Selatan   RS-XXX-21              Sukarami               Kota Palembang   Sumatera Selatan           True
+ 22  SENS-022  LOC-PSW-01            Tegineneng (Masgar)             Kabupaten Pesawaran            Lampung   RS-XXX-22            Tegineneng          Kabupaten Pesawaran            Lampung           True
+ 23  SENS-023  LOC-MER-01                        Merauke               Kabupaten Merauke      Papua Selatan   RS-XXX-23               Merauke            Kabupaten Merauke      Papua Selatan           True
+ 24  SENS-024  LOC-MDN-01                Medan Tuntungan                      Kota Medan     Sumatera Utara   RS-XXX-24       Medan Tuntungan                   Kota Medan     Sumatera Utara           True
+ 25  SENS-025  LOC-SM2-01                  Sungai Pinang                  Kota Samarinda   Kalimantan Timur   RS-XXX-25         Sungai Pinang               Kota Samarinda   Kalimantan Timur           True
+ 26  SENS-026  LOC-BJB-01                  Landasan Ulin                 Kota Banjarbaru Kalimantan Selatan   RS-XXX-26         Landasan Ulin              Kota Banjarbaru Kalimantan Selatan           True
+ 27  SENS-027  LOC-JMB-02                        Mestong           Kabupaten Muaro Jambi              Jambi   RS-XXX-27               Mestong        Kabupaten Muaro Jambi              Jambi           True
+
+Provinsi tidak sama: 0 dari 27
+
+================================================================================
+4. KESESUAIAN FILE AQMS
+  file  baris  id_unik  id_duplikat  id_kosong sensor_id  sensor_ada  kode_stasiun_cocok  kode_di_measurement_id
+BGL-01  24432    24432            0          0  SENS-014        True                True                     014
+BGR-01  24432    24432            0          0  SENS-006        True                True 0000006,0000013,0000020
+BGR-02  24432    24432            0          0  SENS-007        True                True 0000007,0000014,0000021
+BJB-01  24432    24432            0          0  SENS-026        True                True                  BJB-01
+BTM-01  24432    24432            0          0  SENS-013        True                True                     013
+IDP-01  24432    24432            0          0  SENS-009        True                True                  IDP-01
+JKT-01  24432    24432            0          0  SENS-001        True                True 0000001,0000008,0000015
+JKT-02  24432    24432            0          0  SENS-002        True                True 0000002,0000009,0000016
+JKT-03  24432    24432            0          0  SENS-003        True                True 0000003,0000010,0000017
+JMB-01  24432    24432            0          0  SENS-012        True                True                     012
+JMB-02  24432    24432            0          0  SENS-027        True                True                  JMB-02
+KTB-01  24432    24432            0          0  SENS-010        True                True                     010
+KTG-01  24432    24432            0          0  SENS-004        True                True 0000004,0000011,0000018
+KTG-02  24432    24432            0          0  SENS-005        True                True 0000005,0000012,0000019
+MDN-01  20800    20800            0          0  SENS-024        True                True                  MDN-01
+MER-01  24432    24432            0          0  SENS-023        True                True                  MER-01
+MLG-01  24432    24432            0          0  SENS-016        True                True                     016
+MRS-01  24432    24432            0          0  SENS-017        True                True                     017
+PKN-01  24432    24432            0          0  SENS-020        True                True                     020
+PKU-01  24432    24432            0          0  SENS-011        True                True                     011
+PLB-01  36381    36381            0          0  SENS-021        True                True                  PLB-01
+PLU-01  24432    24432            0          0  SENS-018        True                True                     018
+PSW-01  24432    24432            0          0  SENS-022        True                True                  PSW-01
+SM2-01  24432    24432            0          0  SENS-025        True                True                  SM2-01
+SRG-01  24432    24432            0          0  SENS-015        True                True                     015
+STG-01  24432    24432            0          0  SENS-019        True                True                     019
+YKY-01  24432    24432            0          0  SENS-008        True                True                  YKY-01
+
+measurement_id duplikat LINTAS file: 0
+
+================================================================================
+5. DATA KESEHATAN: KELENGKAPAN TANGGAL
+Duplikat (hospital_id, date): 0
+             n_baris  n_tgl_unik   tgl_awal  tgl_akhir  hari_seharusnya  hari_hilang
+hospital_id                                                                         
+RS-XXX-01       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-02       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-03       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-04       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-05       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-06       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-07       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-08       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-09       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-10       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-11       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-12       1019        1019 2023-12-31 2026-10-14             1019            0
+RS-XXX-13       1019        1019 2023-12-31 2026-10-14             1019            0
+RS-XXX-14       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-15       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-16       1019        1019 2023-12-31 2026-10-14             1019            0
+RS-XXX-17       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-18       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-19       1019        1019 2023-12-31 2026-10-14             1019            0
+RS-XXX-20       1019        1019 2023-12-31 2026-10-14             1019            0
+RS-XXX-21       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-22       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-23       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-24       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-25       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-26       1018        1018 2024-01-01 2026-10-14             1018            0
+RS-XXX-27       1018        1018 2024-01-01 2026-10-14             1018            0
+
+================================================================================
+6. DAFTAR NILAI KATEGORI
+
+sites.site_type
+site_type
+Urban Background                       4
+Regional / Clean Background            4
+Traffic / Roadside                     2
+Peatland Buffer / Urban                2
+Industrial Perimeter                   1
+Peatland Boundary                      1
+Industrial Perimeter / Maritime        1
+Urban Coastal Background               1
+Coastal / Regional Background          1
+Urban Background / Valley              1
+Industrial / Karst Perimeter           1
+Peatland Boundary / Inland             1
+Peatland Boundary / Airport            1
+Peatland Buffer / Urban Artery         1
+Urban Background / Highway Corridor    1
+Coastal / Remote Savanna               1
+Industrial & Deforestation Buffer      1
+Airport & Peatland Buffer              1
+Peatland & Plantation Hinterland       1
+
+hospitals.kelas_faskes
+kelas_faskes
+Tipe B                  19
+Tipe C                   5
+Tipe A                   2
+Tipe A (Khusus Paru)     1
+
+sensors.status_operasional
+status_operasional
+Active          23
+Intermittent     3
+Defective        1
+
+metadata_dates.notes
+notes
+Continuous telemetry recording; automated QC pipeline active    26
+Continuous telemetry recording; remote station operation         1
+
+hospitals.kapasitas kosong: 0
+tanggal_instalasi gagal parse: 0 | terawal: 2022-08-01 00:00:00 | terakhir: 2023-06-12 00:00:00 | setelah 2024-01-01: 0

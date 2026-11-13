@@ -1,0 +1,163 @@
+﻿Jumlah baris: 27491 | kolom: ['date', 'time', 'hospital_id', 'dow', 'temp_c', 'dptp_c', 'rhum_pct', 'resp_admissions_under5', 'resp_admissions_over60', 'asthma_emergency_cases', 'copd_admissions', 'resp', 'cvd', 'death']
+
+A. NILAI KOSONG DAN NON-NUMERIK
+                 kolom  kosong  kosong_%  non_numerik
+                  time       0       0.0            0
+                temp_c       0       0.0            0
+                dptp_c       0       0.0            0
+              rhum_pct       0       0.0            0
+resp_admissions_under5       0       0.0            0
+resp_admissions_over60       0       0.0            0
+asthma_emergency_cases       0       0.0            0
+       copd_admissions       0       0.0            0
+                  resp       0       0.0            0
+                   cvd       0       0.0            0
+                 death       0       0.0            0
+tanggal gagal parse: 0 | dow kosong: 0
+
+Persen kosong per rumah sakit (hanya yang punya kosong):
+Tidak ada.
+
+================================================================================
+B. RENTANG DAN LOGIKA
+                        min   50%   95%    max  negatif  bukan_bulat  nol_%
+resp_admissions_under5  0.0   5.0  18.0  114.0        0            0    0.3
+resp_admissions_over60  0.0   6.0  21.0  127.0        0            0    0.2
+asthma_emergency_cases  0.0   4.0  12.0   64.0        0            0    3.0
+copd_admissions         0.0   3.0  10.0   76.0        0            0    4.9
+resp                    0.0  21.0  61.0  307.0        0            0    0.0
+cvd                     0.0   7.0  13.0   61.0        0            0    0.2
+death                   0.0   2.0   5.0   24.0        0            0   10.3
+
+Variabel lingkungan:
+           min   50%   max
+temp_c    22.0  25.9  32.1
+dptp_c    18.1  21.6  29.3
+rhum_pct  64.9  78.6  99.0
+rhum_pct di luar 0-100: 0
+dptp_c > temp_c (titik embun tidak boleh melebihi suhu): 0
+
+baris dengan dow tidak cocok dengan tanggal: 0
+nilai dow: {'Monday': 3942, 'Tuesday': 3942, 'Wednesday': 3942, 'Sunday': 3920, 'Thursday': 3915, 'Friday': 3915, 'Saturday': 3915}
+
+resp < under5 + over60: 92 | resp < under5: 13 | resp < over60: 13 | dari 27491
+
+================================================================================
+C. PROFIL RATA-RATA HARIAN PER RUMAH SAKIT (dengan kelas faskes dan kapasitas)
+                u5    o60   asma  ppok   resp    cvd  death          kelas_faskes  kapasitas_tempat_tidur  resp_per_100_tt
+hospital_id                                                                                                               
+RS-XXX-02    14.16  17.65   7.67  6.23  56.11  10.27   3.81                Tipe B                   250.0            22.44
+RS-XXX-03    13.58  17.26   7.41  6.18  54.45   9.98   3.72                Tipe B                   280.0            19.45
+RS-XXX-01    13.39  16.88   7.34  5.96  53.03   9.66   3.57                Tipe B                   300.0            17.68
+RS-XXX-04     9.76  10.98   5.23  4.56  42.77   7.35   2.36                Tipe B                   220.0            19.44
+RS-XXX-21    12.51  14.83   7.14  8.08  42.53  11.06   2.80                Tipe B                   220.0            19.33
+RS-XXX-05     9.57  10.99   5.25  4.43  42.30   7.60   2.38                Tipe C                   150.0            28.20
+RS-XXX-22    10.10  12.14   5.85  6.57  35.01   9.48   2.19                Tipe C                   160.0            21.88
+RS-XXX-08     8.05   9.67   4.35  4.92  29.96  10.26   2.05                Tipe B                   250.0            11.98
+RS-XXX-20     8.14   9.62   4.74  5.72  28.54   7.93   1.83                Tipe B                   180.0            15.86
+RS-XXX-13     8.06   9.48   4.80  5.70  28.42   7.89   1.83                Tipe B                   180.0            15.79
+RS-XXX-11     7.97   9.40   4.74  5.66  28.04   7.86   1.85                Tipe B                   180.0            15.58
+RS-XXX-12     7.56   8.99   4.45  5.35  27.11   7.81   1.79                Tipe B                   180.0            15.06
+RS-XXX-19     7.05   8.44   4.17  4.98  25.74   7.68   1.79                Tipe B                   180.0            14.30
+RS-XXX-17     6.10   7.45   3.67  4.40  23.33   7.47   1.67                Tipe B                   180.0            12.96
+RS-XXX-07     2.89   3.86   1.53  0.98  21.74   3.10   1.04                Tipe B                   260.0             8.36
+RS-XXX-06     2.78   3.83   1.61  0.93  21.40   3.08   1.04  Tipe A (Khusus Paru)                   200.0            10.70
+RS-XXX-16     5.09   6.33   3.13  3.81  20.54   7.27   1.62                Tipe B                   180.0            11.41
+RS-XXX-10     4.71   5.77   2.92  3.51  19.34   7.19   1.57                Tipe B                   180.0            10.74
+RS-XXX-14     4.49   5.56   2.82  3.29  18.98   7.11   1.54                Tipe B                   180.0            10.54
+RS-XXX-18     4.10   5.00   2.44  2.96  17.55   6.92   1.53                Tipe B                   180.0             9.75
+RS-XXX-15     4.04   5.01   2.49  3.02  17.53   6.98   1.49                Tipe B                   180.0             9.74
+RS-XXX-24     4.66   5.54  10.58  2.35  14.58  11.06   3.18                Tipe A                   720.0             2.02
+RS-XXX-23     2.95   2.91   1.97  2.04  14.10   4.92   1.00                Tipe C                   150.0             9.40
+RS-XXX-25     4.47   5.28  11.28  2.24  13.93   9.52   2.39                Tipe A                   600.0             2.32
+RS-XXX-26     3.36   3.97   8.31  1.67  10.49   6.60   1.91                Tipe B                   300.0             3.50
+RS-XXX-09     1.80   2.47   0.97  1.15   8.25   3.99   1.00                Tipe C                   120.0             6.88
+RS-XXX-27     1.53   1.77   3.61  0.70   4.41   2.98   0.72                Tipe C                   120.0             3.68
+
+================================================================================
+D. KESESUAIAN 'time' DENGAN TANGGAL DAN HARI PERTAMA PER RUMAH SAKIT
+selisih (time - harapan) per rumah sakit:
+             min  max  nunique
+hospital_id                   
+RS-XXX-01   -1.0 -1.0        1
+RS-XXX-02   -1.0 -1.0        1
+RS-XXX-03   -1.0 -1.0        1
+RS-XXX-04   -1.0 -1.0        1
+RS-XXX-05   -1.0 -1.0        1
+RS-XXX-06   -1.0 -1.0        1
+RS-XXX-07   -1.0 -1.0        1
+RS-XXX-08   -1.0 -1.0        1
+RS-XXX-09   -1.0 -1.0        1
+RS-XXX-10   -1.0 -1.0        1
+RS-XXX-11   -1.0 -1.0        1
+RS-XXX-12    0.0  0.0        1
+RS-XXX-13    0.0  0.0        1
+RS-XXX-14   -1.0 -1.0        1
+RS-XXX-15   -1.0 -1.0        1
+RS-XXX-16    0.0  0.0        1
+RS-XXX-17   -1.0 -1.0        1
+RS-XXX-18   -1.0 -1.0        1
+RS-XXX-19    0.0  0.0        1
+RS-XXX-20    0.0  0.0        1
+RS-XXX-21   -1.0 -1.0        1
+RS-XXX-22   -1.0 -1.0        1
+RS-XXX-23   -1.0 -1.0        1
+RS-XXX-24   -1.0 -1.0        1
+RS-XXX-25   -1.0 -1.0        1
+RS-XXX-26   -1.0 -1.0        1
+RS-XXX-27   -1.0 -1.0        1
+
+3 baris pertama (5 rumah sakit mulai 2023-12-31 + 2 pembanding):
+hospital_id       date  time       dow  temp_c  resp  death
+  RS-XXX-01 2024-01-01   1.0    Monday    28.4  59.0    4.0
+  RS-XXX-01 2024-01-02   2.0   Tuesday    28.7  60.0    1.0
+  RS-XXX-01 2024-01-03   3.0 Wednesday    28.8  57.0    8.0
+  RS-XXX-02 2024-01-01   1.0    Monday    28.8  54.0    1.0
+  RS-XXX-02 2024-01-02   2.0   Tuesday    28.4  56.0    3.0
+  RS-XXX-02 2024-01-03   3.0 Wednesday    28.7  58.0    5.0
+  RS-XXX-12 2023-12-31   1.0    Sunday    23.7  21.0    2.0
+  RS-XXX-12 2024-01-01   2.0    Monday    25.7  23.0    1.0
+  RS-XXX-12 2024-01-02   3.0   Tuesday    25.8  19.0    1.0
+  RS-XXX-13 2023-12-31   1.0    Sunday    24.4  27.0    1.0
+  RS-XXX-13 2024-01-01   2.0    Monday    25.8  17.0    2.0
+  RS-XXX-13 2024-01-02   3.0   Tuesday    25.8  20.0    1.0
+  RS-XXX-16 2023-12-31   1.0    Sunday    24.5  15.0    1.0
+  RS-XXX-16 2024-01-01   2.0    Monday    25.8  18.0    3.0
+  RS-XXX-16 2024-01-02   3.0   Tuesday    25.8  24.0    3.0
+  RS-XXX-19 2023-12-31   1.0    Sunday    24.0  12.0    2.0
+  RS-XXX-19 2024-01-01   2.0    Monday    25.8  16.0    2.0
+  RS-XXX-19 2024-01-02   3.0   Tuesday    25.8  16.0    1.0
+  RS-XXX-20 2023-12-31   1.0    Sunday    24.1  18.0    0.0
+  RS-XXX-20 2024-01-01   2.0    Monday    25.8  16.0    2.0
+  RS-XXX-20 2024-01-02   3.0   Tuesday    25.7  18.0    1.0
+
+================================================================================
+E. KORELASI SUHU HARIAN RUMAH SAKIT vs SUHU HARIAN STASIUN (geser -1/0/+1 hari)
+(menguji pemetaan dan penyelarasan tanggal; JMB-02/RS-27 dilewati)
+hospital_id stasiun  r_geser_-1  n_hari  r_geser_+0  r_geser_+1
+  RS-XXX-14  BGL-01       0.007    1017       0.884      -0.011
+  RS-XXX-06  BGR-01       0.018    1017       0.986       0.007
+  RS-XXX-07  BGR-02      -0.006    1017       0.985      -0.021
+  RS-XXX-26  BJB-01       0.062    1017       0.957       0.059
+  RS-XXX-13  BTM-01       0.056    1017       0.798      -0.011
+  RS-XXX-09  IDP-01       0.017    1017       0.883      -0.001
+  RS-XXX-01  JKT-01       0.021    1017       0.985       0.018
+  RS-XXX-02  JKT-02      -0.003    1017       0.985      -0.006
+  RS-XXX-03  JKT-03       0.060    1017       0.986       0.073
+  RS-XXX-12  JMB-01       0.119    1017       0.802       0.032
+  RS-XXX-10  KTB-01      -0.029    1017       0.882      -0.032
+  RS-XXX-04  KTG-01      -0.029    1017       0.985      -0.024
+  RS-XXX-05  KTG-02       0.035    1017       0.984       0.035
+  RS-XXX-24  MDN-01       0.060     998       0.997       0.117
+  RS-XXX-23  MER-01      -0.054     864       0.015      -0.004
+  RS-XXX-16  MLG-01       0.075    1017       0.785      -0.026
+  RS-XXX-17  MRS-01       0.080    1017       0.881       0.106
+  RS-XXX-20  PKN-01       0.016    1017       0.807      -0.023
+  RS-XXX-11  PKU-01       0.012    1017       0.879       0.048
+  RS-XXX-21  PLB-01       0.023    1017       0.991       0.020
+  RS-XXX-18  PLU-01      -0.015    1017       0.889      -0.029
+  RS-XXX-22  PSW-01      -0.015    1017       0.887      -0.023
+  RS-XXX-25  SM2-01      -0.007    1017       0.967      -0.020
+  RS-XXX-15  SRG-01      -0.023    1017       0.885       0.029
+  RS-XXX-19  STG-01       0.099    1017       0.812      -0.000
+  RS-XXX-08  YKY-01       0.064    1017       0.890       0.076

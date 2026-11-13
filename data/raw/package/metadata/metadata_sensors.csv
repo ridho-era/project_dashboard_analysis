@@ -1,0 +1,17 @@
+Supplier,Sensors,Type,Parameters,Header,Units
+Thermo Scientific,5014i BAM,Beta Attenuation Monitor,Particulate Matter PM2.5,pm25_ug_m3 or pm25_ppm,ug/m3 (standard) or ppm (logger export)
+Thermo Scientific,5014i BAM,Beta Attenuation Monitor,Particulate Matter PM10,pm10_ug_m3 or pm10_ppm,ug/m3 (standard) or ppm (logger export)
+Met One Instruments,BAM-1020,Beta Attenuation Monitor,Particulate Matter PM2.5,pm25_ug_m3 or pm25_ppm,ug/m3 (standard) or ppm (logger export)
+Met One Instruments,BAM-1020,Beta Attenuation Monitor,Particulate Matter PM10,pm10_ug_m3 or pm10_ppm,ug/m3 (standard) or ppm (logger export)
+Horiba,APDA-372,Optical Aerosol Spectrometer,Particulate Matter PM2.5,pm25_ug_m3,ug/m3 (standard) or ppm (logger export)
+Horiba,APDA-372,Optical Aerosol Spectrometer,Particulate Matter PM10,pm10_ug_m3,ug/m3 (standard) or ppm (logger export)
+Ecotech,Serinus 10,UV Fluorescence,Sulfur Dioxide (SO2),so2_ug_m3 or so2_ppm,ug/m3 (standard) or ppm (logger export)
+Ecotech,Serinus 30,Gas Filter Correlation (NDIR),Carbon Monoxide (CO),co_ug_m3 or co_ppm,ug/m3 (standard) or ppm (logger export)
+Ecotech,Serinus 40,Non-dispersive UV Photometry,Ozone (O3),o3_ug_m3 or o3_ppm,ug/m3 (standard) or ppm (logger export)
+Ecotech,Serinus 44 / 60,Chemiluminescence,Nitrogen Dioxide (NO2),no2_ug_m3 or no2_ppm,ug/m3 (standard) or ppm (logger export)
+Aeroqual,AQS 1,Gas Sensitive Semiconductor (GSS) & Laser Particle Counter,Ambient Pollutant Suite,"pm25_ug_m3, pm10_ug_m3, o3_ug_m3, no2_ug_m3",ug/m3 (standard) or ppm (logger export)
+Vaisala,WXT536,Capacitive Thin Film Polymer,Ambient Temperature,temperature_c,degC
+Vaisala,WXT536,Capacitive Thin Film Polymer,Ambient Relative Humidity,humidity_pct,%
+Vaisala,WXT536,Ultrasonic Anemometer,Wind Speed,wind_speed_ms,m/s
+Vaisala,WXT536,Ultrasonic Wind Direction Vane,Wind Direction,wind_direction_deg,deg
+QC Engine,Automated Validation,Rule-based Consistency & Physical Limits Check,Quality Control Flag,qc_flag,"categorical (VALID, SUSPECT, CALIBRATING, MISSING)"

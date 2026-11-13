@@ -1,0 +1,91 @@
+﻿1. STASIUN NOMINAL vs EFEKTIF (efektif = >= 75% hari valid)
+                   provinsi       pulau status_operasional  latitude_dd  longitude_dd  hari_valid  persen_valid  efektif  hari_di_atas_55_%  hari_sangat_tidak_sehat_atau_lebih  resp_rata2_per_hari_RS
+stasiun                                                                                                                                                                                                
+JMB-02                Jambi    Sumatera          Defective    -1.635000    103.646000           0           0.0    False                NaN                                   0                     4.4
+MER-01        Papua Selatan       Papua       Intermittent    -8.521100    140.407200           2           0.2    False                0.0                                   0                    14.1
+MDN-01       Sumatera Utara    Sumatera       Intermittent     3.590000     98.850000         371          36.4    False                8.9                                   0                    14.6
+PLB-01     Sumatera Selatan    Sumatera       Intermittent    -2.940000    104.700000         628          61.7    False               25.3                                  57                    42.5
+BJB-01   Kalimantan Selatan  Kalimantan             Active    -3.475000    114.856000         712          69.9    False               28.7                                   0                    10.5
+SM2-01     Kalimantan Timur  Kalimantan             Active    -0.482500    117.156300         771          75.7     True               13.7                                  76                    13.9
+BTM-01       Kepulauan Riau    Sumatera             Active     1.124000    104.126000        1018         100.0     True               25.4                                   1                    28.4
+BGL-01             Bengkulu    Sumatera             Active    -3.865000    102.312000        1018         100.0     True                0.0                                   0                    19.0
+JKT-02          DKI Jakarta        Jawa             Active    -6.111820    106.964410        1018         100.0     True              100.0                                   0                    56.1
+JKT-01          DKI Jakarta        Jawa             Active    -6.175392    106.827153        1018         100.0     True                0.0                                   0                    53.0
+IDP-01                 Aceh    Sumatera             Active     5.404000     95.475000        1018         100.0     True                0.0                                   0                     8.3
+JKT-03          DKI Jakarta        Jawa             Active    -6.152814    106.732890        1018         100.0     True               34.6                                   0                    54.5
+KTB-01       Sumatera Barat    Sumatera             Active    -0.251000    100.382000        1018         100.0     True                0.6                                   2                    19.3
+JMB-01                Jambi    Sumatera             Active    -1.630000    103.640000        1018         100.0     True               25.3                                   2                    27.1
+BGR-01           Jawa Barat        Jawa             Active    -6.697840    106.942120        1018         100.0     True                0.0                                   0                    21.4
+BGR-02           Jawa Barat        Jawa             Active    -6.602200    106.808900        1018         100.0     True                0.0                                   0                    21.7
+KTG-01    Kalimantan Tengah  Kalimantan             Active    -2.213600    113.910800        1018         100.0     True               25.0                                  44                    42.8
+KTG-02    Kalimantan Tengah  Kalimantan             Active    -2.535800    112.955400        1018         100.0     True               25.8                                  44                    42.3
+MLG-01           Jawa Timur        Jawa             Active    -7.901000    112.598000        1018         100.0     True                0.0                                   0                    20.5
+MRS-01     Sulawesi Selatan    Sulawesi             Active    -4.997000    119.570000        1018         100.0     True                0.0                                   0                    23.3
+PKU-01                 Riau    Sumatera             Active     0.466670    101.466600        1018         100.0     True               25.4                                   2                    28.0
+PKN-01    Kalimantan Tengah  Kalimantan             Active    -2.704000    111.676000        1018         100.0     True               25.3                                   6                    28.5
+PLU-01      Sulawesi Tengah    Sulawesi             Active    -1.650000    120.183000        1018         100.0     True                0.0                                   0                    17.5
+PSW-01              Lampung    Sumatera             Active    -5.170000    105.178000        1018         100.0     True               25.6                                   0                    35.0
+SRG-01     Papua Barat Daya       Papua             Active    -0.883000    131.298000        1018         100.0     True                0.0                                   0                    17.5
+STG-01     Kalimantan Barat  Kalimantan             Active     0.066000    111.477000        1018         100.0     True               22.5                                   5                    25.8
+YKY-01      D.I. Yogyakarta        Jawa             Active    -7.731000    110.354000        1018         100.0     True                1.0                                   0                    30.0
+
+Stasiun nominal: 27 | efektif: 22 | terbatas: 5
+
+================================================================================
+2. TETANGGA TERDEKAT: jarak dan keserupaan PM2.5 harian (mentah dan tanpa pola musiman bulanan)
+        tetangga_terdekat  jarak_km  n_hari_bersama  korelasi_mentah  korelasi_tanpa_musim
+stasiun                                                                                   
+BGL-01             PLB-01       284             628             0.76                  0.05
+BGR-01             BGR-02        18            1018            -0.00                 -0.00
+BGR-02             BGR-01        18            1018            -0.00                 -0.00
+BJB-01             KTG-01       175             712             0.52                  0.03
+BTM-01             PKU-01       305            1018             1.00                  0.99
+IDP-01             MDN-01       425             371             0.56                 -0.04
+JKT-01             JKT-03        11            1018             0.93                 -0.02
+JKT-02             JKT-01        17            1018             0.93                  0.00
+JKT-03             JKT-01        11            1018             0.93                 -0.02
+JMB-01             JMB-02         1               0              NaN                   NaN
+JMB-02             JMB-01         1               0              NaN                   NaN
+KTB-01             PKU-01       145            1018             0.94                  0.84
+KTG-01             KTG-02       112            1018             1.00                  1.00
+KTG-02             KTG-01       112            1018             1.00                  1.00
+MDN-01             IDP-01       425             371             0.56                 -0.04
+MER-01             SRG-01      1319               2              NaN                   NaN
+MLG-01             YKY-01       248            1018             0.96                  0.02
+MRS-01             PLU-01       378            1018             0.98                  0.02
+PKN-01             KTG-02       143            1018             0.75                  0.71
+PKU-01             KTB-01       145            1018             0.94                  0.84
+PLB-01             JMB-02       186               0              NaN                   NaN
+PLU-01             SM2-01       361             771             0.66                 -0.03
+PSW-01             JKT-03       204            1018             0.82                  0.02
+SM2-01             PLU-01       361             771             0.66                 -0.03
+SRG-01             PLU-01      1239            1018             0.98                  0.06
+STG-01             PKN-01       309            1018             0.97                  0.96
+YKY-01             MLG-01       248            1018             0.96                  0.02
+
+================================================================================
+3. RINGKASAN PER PROVINSI
+Aturan: terpapar = (>= 20% hari di atas 55) ATAU (ada hari > 150,4). Aturan ini sederhana dan dapat Anda ubah; bukan rekomendasi final.
+                    stasiun  efektif  hari_valid  sangat_tidak_sehat_atau_lebih  persen_hari_di_atas_55  pm25_harian_maks       pulau  resp_rata2_per_hari_RS                                         tingkat
+provinsi                                                                                                                                                                                                     
+Lampung                   1        1        1018                              0                    25.6             103.0    Sumatera                    35.0          A: terpapar, hanya <=1 stasiun efektif
+Kepulauan Riau            1        1        1018                              1                    25.4             165.0    Sumatera                    28.4          A: terpapar, hanya <=1 stasiun efektif
+Riau                      1        1        1018                              2                    25.4             176.0    Sumatera                    28.0          A: terpapar, hanya <=1 stasiun efektif
+Jambi                     2        1        1018                              2                    25.3             183.0    Sumatera                    15.8          A: terpapar, hanya <=1 stasiun efektif
+Kalimantan Barat          1        1        1018                              5                    22.5             320.0  Kalimantan                    25.8          A: terpapar, hanya <=1 stasiun efektif
+Kalimantan Timur          1        1         771                             76                    13.7             292.0  Kalimantan                    13.9          A: terpapar, hanya <=1 stasiun efektif
+Sumatera Barat            1        1        1018                              2                     0.6             189.0    Sumatera                    19.3          A: terpapar, hanya <=1 stasiun efektif
+Papua Selatan             1        0           2                              0                     0.0              16.0       Papua                    14.1                        BUTA: cakupan data < 10%
+DKI Jakarta               3        3        3054                              0                    44.9              66.0        Jawa                    54.5                   C: tidak ada tanda kekurangan
+Kalimantan Tengah         3        3        3054                             94                    25.4            1128.0  Kalimantan                    37.9                   C: tidak ada tanda kekurangan
+D.I. Yogyakarta           1        1        1018                              0                     1.0              56.0        Jawa                    30.0                   C: tidak ada tanda kekurangan
+Aceh                      1        1        1018                              0                     0.0              12.0    Sumatera                     8.3                   C: tidak ada tanda kekurangan
+Bengkulu                  1        1        1018                              0                     0.0              34.0    Sumatera                    19.0                   C: tidak ada tanda kekurangan
+Jawa Barat                2        2        2036                              0                     0.0              20.0        Jawa                    21.6                   C: tidak ada tanda kekurangan
+Jawa Timur                1        1        1018                              0                     0.0              41.0        Jawa                    20.5                   C: tidak ada tanda kekurangan
+Papua Barat Daya          1        1        1018                              0                     0.0              25.0       Papua                    17.5                   C: tidak ada tanda kekurangan
+Sulawesi Selatan          1        1        1018                              0                     0.0              49.0    Sulawesi                    23.3                   C: tidak ada tanda kekurangan
+Sulawesi Tengah           1        1        1018                              0                     0.0              17.0    Sulawesi                    17.5                   C: tidak ada tanda kekurangan
+Sumatera Utara            1        0         371                              0                     8.9              59.0    Sumatera                    14.6             TERBATAS: tidak ada stasiun efektif
+Kalimantan Selatan        1        0         712                              0                    28.7              84.0  Kalimantan                    10.5  TERBATAS: tidak ada stasiun efektif + terpapar
+Sumatera Selatan          1        0         628                             57                    25.3             241.0    Sumatera                    42.5  TERBATAS: tidak ada stasiun efektif + terpapar

@@ -1,0 +1,79 @@
+﻿A. TABEL DIMENSI STASIUN
+baris: 27 | stasiun unik: 27 | rumah sakit unik: 27
+sel kosong pada kolom kunci: 0
+stasiun per pulau: {'Sumatera': 10, 'Jawa': 7, 'Kalimantan': 6, 'Papua': 2, 'Sulawesi': 2}
+stasiun hospital_id           provinsi      pulau status_operasional         kelas_faskes
+ BGL-01   RS-XXX-14           Bengkulu   Sumatera             Active               Tipe B
+ BGR-01   RS-XXX-06         Jawa Barat       Jawa             Active Tipe A (Khusus Paru)
+ BGR-02   RS-XXX-07         Jawa Barat       Jawa             Active               Tipe B
+ BJB-01   RS-XXX-26 Kalimantan Selatan Kalimantan             Active               Tipe B
+ BTM-01   RS-XXX-13     Kepulauan Riau   Sumatera             Active               Tipe B
+ IDP-01   RS-XXX-09               Aceh   Sumatera             Active               Tipe C
+ JKT-01   RS-XXX-01        DKI Jakarta       Jawa             Active               Tipe B
+ JKT-02   RS-XXX-02        DKI Jakarta       Jawa             Active               Tipe B
+ JKT-03   RS-XXX-03        DKI Jakarta       Jawa             Active               Tipe B
+ JMB-01   RS-XXX-12              Jambi   Sumatera             Active               Tipe B
+ JMB-02   RS-XXX-27              Jambi   Sumatera          Defective               Tipe C
+ KTB-01   RS-XXX-10     Sumatera Barat   Sumatera             Active               Tipe B
+ KTG-01   RS-XXX-04  Kalimantan Tengah Kalimantan             Active               Tipe B
+ KTG-02   RS-XXX-05  Kalimantan Tengah Kalimantan             Active               Tipe C
+ MDN-01   RS-XXX-24     Sumatera Utara   Sumatera       Intermittent               Tipe A
+ MER-01   RS-XXX-23      Papua Selatan      Papua       Intermittent               Tipe C
+ MLG-01   RS-XXX-16         Jawa Timur       Jawa             Active               Tipe B
+ MRS-01   RS-XXX-17   Sulawesi Selatan   Sulawesi             Active               Tipe B
+ PKN-01   RS-XXX-20  Kalimantan Tengah Kalimantan             Active               Tipe B
+ PKU-01   RS-XXX-11               Riau   Sumatera             Active               Tipe B
+ PLB-01   RS-XXX-21   Sumatera Selatan   Sumatera       Intermittent               Tipe B
+ PLU-01   RS-XXX-18    Sulawesi Tengah   Sulawesi             Active               Tipe B
+ PSW-01   RS-XXX-22            Lampung   Sumatera             Active               Tipe C
+ SM2-01   RS-XXX-25   Kalimantan Timur Kalimantan             Active               Tipe A
+ SRG-01   RS-XXX-15   Papua Barat Daya      Papua             Active               Tipe B
+ STG-01   RS-XXX-19   Kalimantan Barat Kalimantan             Active               Tipe B
+ YKY-01   RS-XXX-08    D.I. Yogyakarta       Jawa             Active               Tipe B
+
+================================================================================
+B. DATA KESEHATAN SETELAH CLEANING
+baris mentah: 27491 | dibuang: 5 | tersisa: 27486
+duplikat (hospital_id, date): 0
+hospital dengan hari != 1018: []
+rentang tanggal: 2024-01-01 -> 2026-10-14
+baris tanpa pasangan stasiun: 0
+resp_inkonsisten total: 92
+
+resp_inkonsisten per rumah sakit (hanya > 0):
+hospital_id
+RS-XXX-27    92
+
+================================================================================
+C. KORELASI SUHU HARIAN RS vs STASIUN (data udara bersih; hari dengan >= 4 jam valid)
+hospital_id stasiun  r_geser_-1  n_hari  r_geser_+0  r_geser_+1
+  RS-XXX-14  BGL-01      -0.020    1017       0.703      -0.010
+  RS-XXX-06  BGR-01       0.030    1017       0.895       0.015
+  RS-XXX-07  BGR-02      -0.014    1017       0.891      -0.014
+  RS-XXX-26  BJB-01       0.062    1017       0.957       0.059
+  RS-XXX-13  BTM-01       0.073    1017       0.626       0.014
+  RS-XXX-09  IDP-01       0.043    1017       0.777      -0.019
+  RS-XXX-01  JKT-01       0.012    1017       0.852       0.035
+  RS-XXX-02  JKT-02      -0.003    1017       0.857      -0.003
+  RS-XXX-03  JKT-03       0.031    1017       0.861       0.074
+  RS-XXX-12  JMB-01       0.041    1017       0.620       0.033
+  RS-XXX-27  JMB-02         NaN       1         NaN         NaN
+  RS-XXX-10  KTB-01      -0.020    1017       0.704      -0.062
+  RS-XXX-04  KTG-01      -0.048    1017       0.848      -0.031
+  RS-XXX-05  KTG-02       0.004    1017       0.830       0.055
+  RS-XXX-24  MDN-01      -0.008     996       0.640       0.057
+  RS-XXX-23  MER-01      -0.054     602       0.045      -0.054
+  RS-XXX-16  MLG-01       0.053    1017       0.619      -0.017
+  RS-XXX-17  MRS-01       0.080    1017       0.699       0.123
+  RS-XXX-20  PKN-01      -0.001    1017       0.639      -0.027
+  RS-XXX-11  PKU-01      -0.005    1017       0.748       0.008
+  RS-XXX-21  PLB-01      -0.016    1017       0.715       0.002
+  RS-XXX-18  PLU-01      -0.048    1017       0.719      -0.031
+  RS-XXX-22  PSW-01       0.008    1017       0.730      -0.020
+  RS-XXX-25  SM2-01      -0.009    1017       0.111      -0.011
+  RS-XXX-15  SRG-01      -0.019    1017       0.713       0.001
+  RS-XXX-19  STG-01       0.119    1017       0.668       0.005
+  RS-XXX-08  YKY-01       0.046    1017       0.661       0.028
+
+Tersimpan: D:\Gelar Rasa\project_dashboard_analysis\data\processed\dim_stasiun.parquet | D:\Gelar Rasa\project_dashboard_analysis\data\processed\health_daily_clean.parquet
+Log: D:\Gelar Rasa\project_dashboard_analysis\docs\cleaning_log_kesehatan_auto.csv

@@ -1,0 +1,15 @@
+﻿efek_komponen_cepat.csv        56 baris
+efek_komponen_lambat.csv        7 baris
+efek_kategori.csv              28 baris
+efek_kategori_n.csv             6 baris
+RS dipakai: 24
+Cuplikan komponen cepat, ISPA_balita:
+ jeda_hari  persen  bawah  atas
+         0    2.68   0.92  4.47
+         1    2.10   0.36  3.86
+         2    1.05   0.15  1.96
+         3    0.24   0.09  0.40
+         4   -0.35  -1.11  0.41
+         5   -0.81  -1.92  0.31
+         6   -0.98  -2.26  0.32
+         7   -0.98  -2.12  0.17

@@ -1,0 +1,11 @@
+﻿stasiun.csv                       27 baris |   0.01 MB
+harian_udara.csv               27486 baris |   2.53 MB
+bulanan_udara.csv                918 baris |   0.03 MB
+profil_jam.csv                   648 baris |   0.01 MB
+kesehatan_harian.csv           27486 baris |   2.22 MB
+iku_tahunan.csv                   81 baris |   0.00 MB
+tren_jendela.csv                  81 baris |   0.00 MB
+tetangga.csv                      27 baris |   0.00 MB
+jaringan_provinsi.csv             21 baris |   0.00 MB
+
+Selesai. Folder: D:\Gelar Rasa\project_dashboard_analysis\dashboard\data

@@ -1,0 +1,28 @@
+sensor_id,location_id,nama_sensor,model_sensor,tipe_pemasangan,latitude,longitude,status_operasional,tanggal_instalasi,region_group
+SENS-001,LOC-JKT-01,AQMS Gambir Medan Merdeka,Thermo Scientific 5014i BAM,Fixed Ambient Station (Rooftop 12m),-6.175392,106.827153,Active,2023-01-15,Jakarta
+SENS-002,LOC-JKT-02,AQMS Marunda Industrial Port,Horiba APDA-372 Continuous Aerosol Monitor,Industrial Perimeter Station (Pole 6m),-6.11182,106.96441,Active,2022-11-20,Jakarta
+SENS-003,LOC-JKT-03,AQMS Cengkareng Daan Mogot Artery,Ecotech Serinus 60 Air Quality Station,Roadside Station (Pole 3.5m),-6.152814,106.73289,Active,2023-04-12,Jakarta
+SENS-004,LOC-KTG-01,AQMS Palangka Raya Jekan Raya,Thermo Scientific 5014i BAM,Urban & Peatland Buffer Station (Tower 8m),-2.2136,113.9108,Active,2023-03-10,Kalimantan Tengah
+SENS-005,LOC-KTG-02,AQMS Sampit Mentawa Baru,Met One BAM-1020 PM Monitor,Peatland Boundary Station (Ground Tower 6m),-2.5358,112.9554,Active,2023-05-15,Kalimantan Tengah
+SENS-006,LOC-BGR-01,AQMS Cisarua Puncak Reference Station,Ecotech Serinus 60 Air Quality Station,Clean Background Baseline Station (Tower 10m),-6.69784,106.94212,Active,2022-08-01,Bogor
+SENS-007,LOC-BGR-02,AQMS Bogor Baranangsiang Urban,Aeroqual AQS 1 Ambient Monitor,Urban Roadside & Rain Valley Station (Ground 4m),-6.6022,106.8089,Active,2023-06-12,Bogor
+SENS-008,LOC-YKY-01,AQMS BMKG Sleman Mlati,Met One BAM-1020 PM Monitor,Fixed Ambient Baseline Station (Tower 10m),-7.731,110.354,Active,2023-02-15,Yogyakarta
+SENS-009,LOC-IDP-01,AQMS BMKG Indrapuri Aceh,Thermo Scientific 5014i BAM,Fixed Ambient Clean Baseline (Tower 12m),5.404,95.475,Active,2022-10-10,Aceh
+SENS-010,LOC-KTB-01,AQMS BMKG Kabupaten Agam,Thermo Scientific 5014i BAM,Fixed Ambient Station,-0.251,100.382,Active,2023-01-20,Sumatera Barat
+SENS-011,LOC-PKU-01,AQMS BMKG Kota Pekanbaru,Met One BAM-1020 PM Monitor,Fixed Ambient Station,0.46667,101.4666,Active,2023-01-20,Riau
+SENS-012,LOC-JMB-01,AQMS BMKG Kota Jambi,Thermo Scientific 5014i BAM,Fixed Ambient Station,-1.63,103.64,Active,2023-01-20,Jambi
+SENS-013,LOC-BTM-01,AQMS BMKG Kota Batam,Horiba APDA-372,Fixed Ambient Station,1.124,104.126,Active,2023-01-20,Kepulauan Riau
+SENS-014,LOC-BGL-01,AQMS BMKG Kota Bengkulu,Ecotech Serinus 60,Fixed Ambient Station,-3.865,102.312,Active,2023-01-20,Bengkulu
+SENS-015,LOC-SRG-01,AQMS BMKG Kota Sorong,Aeroqual AQS 1,Fixed Ambient Station,-0.883,131.298,Active,2023-01-20,Papua Barat Daya
+SENS-016,LOC-MLG-01,AQMS BMKG Kabupaten Malang,Met One BAM-1020 PM Monitor,Fixed Ambient Station,-7.901,112.598,Active,2023-01-20,Jawa Timur
+SENS-017,LOC-MRS-01,AQMS BMKG Kabupaten Maros,Horiba APDA-372,Fixed Ambient Station,-4.997,119.57,Active,2023-01-20,Sulawesi Selatan
+SENS-018,LOC-PLU-01,AQMS BMKG Kabupaten Poso,Thermo Scientific 5014i BAM,Fixed Ambient Station,-1.65,120.183,Active,2023-01-20,Sulawesi Tengah
+SENS-019,LOC-STG-01,AQMS BMKG Kabupaten Sintang,Met One BAM-1020 PM Monitor,Fixed Ambient Station,0.066,111.477,Active,2023-01-20,Kalimantan Barat
+SENS-020,LOC-PKN-01,AQMS BMKG Kabupaten Kotawaringin Barat,Thermo Scientific 5014i BAM,Fixed Ambient Station,-2.704,111.676,Active,2023-01-20,Kalimantan Tengah
+SENS-021,LOC-PLB-01,AQMS BMKG Talang Betutu Palembang,Thermo Scientific 5014i BAM,Fixed Ambient Station (Tower 10m),-2.94,104.7,Intermittent,2022-09-01,Sumatera Selatan
+SENS-022,LOC-PSW-01,AQMS BMKG Masgar Pesawaran,Met One BAM-1020 PM Monitor,Fixed Ambient Station (Tower 10m),-5.17,105.178,Active,2023-03-01,Lampung
+SENS-023,LOC-MER-01,AQMS BMKG Mopah Merauke,Thermo Scientific 5014i BAM,Fixed Ambient Station (Tower 10m),-8.5211,140.4072,Intermittent,2023-04-15,Papua
+SENS-024,LOC-MDN-01,AQMS BMKG Stasiun Klimatologi Medan,Thermo Scientific 5014i BAM,Fixed Ambient Station (Rooftop 12m),3.59,98.85,Intermittent,2023-01-10,Sumatera Utara
+SENS-025,LOC-SM2-01,AQMS BMKG Samarinda APT Pranoto,Thermo Scientific 5014i BAM,Fixed Ambient Station (Tower 10m),-0.4825,117.1563,Active,2023-02-15,Kalimantan Timur
+SENS-026,LOC-BJB-01,AQMS BMKG Stasiun Klimatologi Banjarbaru,Thermo Scientific 5014i BAM,Fixed Ambient Station (Rooftop 10m),-3.475,114.856,Active,2023-01-15,Kalimantan Selatan
+SENS-027,LOC-JMB-02,AQMS BMKG Muaro Jambi,Thermo Scientific 5014i BAM,Fixed Ambient Station (Tower 10m),-1.635,103.646,Defective,2023-05-10,Sumatera
